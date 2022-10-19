@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray);
+    font-family: 'Karla';
+}
+.container {
+    width: 350px;
+    margin: 20px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.up__container, .plan, .whyUs {
+    height: 250px;
+    padding: 1.5rem;
+}
+.up__container {
+    background-color: white;
+}
+.title {
+    color: var(--cyan);
+    font-weight: 700;
+    font-size: 18px;
+}
+.subtitle {
+    margin: 1rem 0;
+    color: var(--bright-yellow);
+    font-weight: 700;
+}
+.text {
+    color: var(--grayish-blue);
+    line-height: 2;
+    font-size: 14px;
+    margin-right: 1rem;
+}
+.plan {
+    background-color: var(--cyan);
+    color: var(--light-gray);
+}
+.title__plan {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.price {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.price span {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsla(203, 44%, 93%, 0.671);
+    margin-left: 0.7rem;
+}
+.buttom {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bright-yellow);
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Karla';
+    border-radius: 0.3rem;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.whyUs {
+    background-color: hsl(179, 56%, 52%);
+    color: var(--light-gray);
+}
+.title__whyUs {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+.text__whyUs {
+    font-size: 14px;
+    line-height: 1.7;
+}
+/* CREDITS -START- */
+.attribution {
+    margin-bottom: 1rem;
+    font-size: 13px;
+    color: var(--grayish-blue);
+}   
+.attribution a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--cyan);
+}
+.attribution a:hover {
+    color: var(--bright-yellow);
+}
+/* CREDITS -END- */
+@media screen and (min-width:768px) {
+    body {
+        height: 100vh;
+    }
+    .container {
+        width: 650px;
+    }
+    .down__container {
+        display: flex;
+    }
+    .up__container, .plan, .whyUs {
+        height: 250px;
+        padding: 2.5rem;
+    }
+    .title {
+        font-size: 26px;
+    }
+    .subtitle {
+        font-size: 18px;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .plan {
+        width: 50%;
+    }
+    .title__plan {
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+    .price {
+        margin-bottom: 0.5rem;
+    }
+    .buttom {
+        margin-top: 1.5rem;
+    }
+    .whyUs {
+        width: 50%;
+    }
+    .title__whyUs {
+        font-size: 20px;
+    }
+    .text__whyUs {
+        font-size: 14px;
+        line-height: 1.45;
+    }
+}
